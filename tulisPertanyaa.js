@@ -8,7 +8,7 @@ if(!fs.existsSync('./data')) {
 }
 if(!fs.existsSync('./data/contacts.json')) fs.writeFileSync('data/contacts.json','[]');
 
-
+ 
 const json = JSON.parse(fs.readFileSync('./data/contacts.json','utf-8'));
 
 const simpan = (nama,email,nomor) => {
